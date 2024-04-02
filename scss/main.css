@@ -12028,6 +12028,16 @@ h5, .h5 {
   font-weight: 300;
 }
 
+.btn-form {
+  border-radius: 30px;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-form:hover {
+  color: #fff;
+}
+
 .navbar img {
   width: 150px;
 }
@@ -12223,4 +12233,8 @@ footer i:hover {
   position: absolute;
   top: 5%;
   left: 5%;
+}
+
+.form-control {
+  border: 1px solid #484C19;
 }/*# sourceMappingURL=main.css.map */

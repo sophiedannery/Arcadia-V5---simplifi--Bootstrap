@@ -49,6 +49,9 @@ h5{
     font-size: 32px;
 }
 
+
+
+
 // BOUTONS
 .btn-lien-animaux,
 .btn-avis{
@@ -61,6 +64,15 @@ h5{
     text-decoration: none;
     font-size: 13.5px;
     font-weight: 300;
+}
+
+.btn-form{
+    border-radius: 30px;
+    color: #fff;
+    width: 100%;
+}
+.btn-form:hover{
+    color: #fff;
 }
 
 
@@ -286,6 +298,14 @@ footer i:hover{
 }
 
 
+
+
+
+// CONTACT
+
+.form-control{
+    border: 1px solid #484C19;
+}
 
 
 
