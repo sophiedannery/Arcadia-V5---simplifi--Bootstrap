@@ -34,6 +34,10 @@ h6{
     letter-spacing: 2px;
 }
 
+h1{
+    font-size: 80px;
+}
+
 
 
 
@@ -60,3 +64,24 @@ footer i{
 footer i:hover{
     color: $primary;
 }
+
+
+// HERO SCENE
+.hero-scene{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url(/Media/oeil-crocodil.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-scene-content{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-scene-content h1{
+    opacity: 0.6;
+}
+
