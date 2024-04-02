@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- appel du CSS de Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- appel icone Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
     <title>Arcadia</title>
 </head>
 <body>
 
-    <header>Le menu</header>
+    <header>Le menu <i class="bi bi-binoculars-fill"></i></header>
 
+    <!-- le id 'main-page' pour le routage -->
     <main id="main-page"></main>
 
     <footer>Le footer</footer>
 
-
+    <!-- appel du fichier JS qui gère le routage -->
     <script type="module" src="Router/router.js"></script>
+
+    <!-- appel du JS de bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
