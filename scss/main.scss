@@ -7,6 +7,8 @@
 html{
     position: relative;
     min-height: 100%;
+    padding: 0;
+    margin: 0;
 }
 // marge bottom au main pour pas que ça passe derrière le footer
 main{
@@ -27,7 +29,7 @@ h1,
 h2, 
 h3, 
 h4, 
-h4, 
+h5, 
 h6{
     font-family: $font-family-serif;
     font-weight: lighter;
@@ -38,6 +40,14 @@ h1{
     font-size: 80px;
 }
 
+h4{
+    font-size: 42px;
+    color: $success;
+}
+
+h5{
+    font-size: 32px;
+}
 
 
 
@@ -81,7 +91,78 @@ footer i:hover{
     justify-content: center;
 }
 
-.hero-scene-content h1{
-    opacity: 0.6;
+
+
+// INFOS 
+
+.infos i{
+    font-size: 30px;
+    color: $success;
 }
 
+
+// PREPARER VISITE
+
+.prep-titre{
+    display: flex;
+    align-items: center;
+}
+
+.prep-titre i{
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.prep-titre h5{
+    margin: 0 !important;
+}
+
+//liens en savoir plus
+.col-prep a{
+    color: #fff;
+}
+
+
+//horaire
+.container-horaire{
+    width: 60%;
+    margin-left: 60px;
+}
+
+.row-hor{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+
+// HABITATS
+
+.col-habitats h4{
+    margin-top: 15px;
+}
+
+//taille image
+.habitats-img{
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.habitats-img-savane{
+    background-image: url(/Media/lasavaneV2.jpg);
+}
+.habitats-img-jungle{
+    background-image: url(/Media/lajungleV2.jpg);
+}
+.habitats-img-marais{
+    background-image: url(/Media/oeil-crocodil.jpg);
+}
+
+//image hover effect 
+.habitats-img:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
