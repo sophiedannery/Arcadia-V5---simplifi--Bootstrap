@@ -12077,6 +12077,7 @@ footer i:hover {
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url(/Media/renard-roux.jpg);
   background-position: center;
   background-size: cover;
+  margin-bottom: 30px;
 }
 
 .hero-scene-content-autre {
