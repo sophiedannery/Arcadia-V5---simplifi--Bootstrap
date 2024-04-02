@@ -12056,7 +12056,21 @@ footer i:hover {
 }
 
 .hero-scene-content {
-  height: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-scene-autre {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url(/Media/renard-roux.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-scene-content-autre {
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
