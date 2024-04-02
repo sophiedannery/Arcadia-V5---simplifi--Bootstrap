@@ -49,6 +49,21 @@ h5{
     font-size: 32px;
 }
 
+// BOUTONS
+.btn-lien-animaux,
+.btn-avis{
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.btn a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 300;
+}
+
+
 
 
 
@@ -102,6 +117,14 @@ footer i:hover{
 
 
 // PREPARER VISITE
+.row-prep-visite{
+    padding: 0;
+    margin: 0;
+}
+
+.prep-visite{
+    max-width: 100%;
+}
 
 .prep-titre{
     display: flex;
@@ -128,7 +151,6 @@ footer i:hover{
     width: 60%;
     margin-left: 60px;
 }
-
 .row-hor{
     display: flex;
     justify-content: space-between;
@@ -152,6 +174,7 @@ footer i:hover{
     cursor: pointer;
     border-radius: 30px;
 }
+
 .habitats-img-savane{
     background-image: url(/Media/lasavaneV2.jpg);
 }
@@ -166,3 +189,46 @@ footer i:hover{
 .habitats-img:hover{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+// AVIS
+.avis{
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(/Media/bg-avis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+}
+
+.container-avis{
+    background-color: rgba($color: #fff, $alpha: 0.7);
+    border-radius: 30px;
+    margin: auto;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.avis-box{
+    width: 80%;
+    margin: auto;    
+}
+
+//guillemets
+.fa-quote-right, 
+.fa-quote-left{
+    font-size: 50px;
+}
+.fa-quote-right{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.fa-quote-left{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
