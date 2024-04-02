@@ -12016,7 +12016,7 @@ h5, .h5 {
 }
 
 .btn-lien-animaux,
-.btn-avis {
+.btn-avis .btn-carte-resto {
   padding: 10px 30px;
   border-radius: 30px;
 }
@@ -12036,6 +12036,17 @@ h5, .h5 {
 
 .btn-form:hover {
   color: #fff;
+}
+
+.btn-carte-resto {
+  background: #fff;
+  color: #484C19;
+  border-radius: 30px;
+}
+
+.btn-carte-resto:hover {
+  background: #fff;
+  color: #C6732E;
 }
 
 .navbar img {
@@ -12238,4 +12249,36 @@ footer i:hover {
 
 .form-control {
   border: 1px solid #484C19;
+}
+
+.row-visite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-inifos-visite-guide {
+  width: 50%;
+}
+
+.col-g-visite {
+  display: flex;
+  align-items: center;
+}
+
+.col-g-visite i {
+  margin-right: 6px;
+}
+
+.col-g-visite p,
+.col-d-visite p {
+  margin: 0;
+}
+
+.row-info-resto {
+  width: 80%;
+}
+
+.col-info-resto p {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
