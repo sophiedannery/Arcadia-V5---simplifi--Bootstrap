@@ -12015,10 +12015,12 @@ h5, .h5 {
   font-size: 32px;
 }
 
-.btn-lien-animaux,
-.btn-avis .btn-carte-resto {
-  padding: 10px 30px;
-  border-radius: 30px;
+.btn {
+  color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
 }
 
 .btn a {
@@ -12028,20 +12030,27 @@ h5, .h5 {
   font-weight: 300;
 }
 
+.btn-lien-animaux,
+.btn-avis,
+.btn-carte-resto,
 .btn-form {
+  padding: 10px 30px;
   border-radius: 30px;
-  color: #fff;
+}
+
+.btn-form {
   width: 100%;
 }
 
-.btn-form:hover {
-  color: #fff;
+.btn-espaces {
+  width: 80%;
+  border-radius: 30px;
+  padding: 10px auto;
 }
 
 .btn-carte-resto {
   background: #fff;
   color: #484C19;
-  border-radius: 30px;
 }
 
 .btn-carte-resto a {
@@ -12256,6 +12265,10 @@ footer i:hover {
 
 .form-control {
   border: 1px solid #484C19;
+}
+
+.hidden-form {
+  display: none;
 }
 
 .row-visite {

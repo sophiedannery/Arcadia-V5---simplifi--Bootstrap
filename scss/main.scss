@@ -53,36 +53,42 @@ h5{
 
 
 // BOUTONS
-.btn-lien-animaux,
-.btn-avis
-.btn-carte-resto{
-    padding: 10px 30px;
-    border-radius: 30px;
+.btn{
+    color: #fff;
 }
 
+.btn:hover{
+    color: #fff;
+}
 .btn a{
     color: #fff;
     text-decoration: none;
     font-size: 13.5px;
     font-weight: 300;
 }
+.btn-lien-animaux,
+.btn-avis,
+.btn-carte-resto,
+.btn-form{
+    padding: 10px 30px;
+    border-radius: 30px;
+}
 
 //bouton formulaire
 .btn-form{
-    border-radius: 30px;
-    color: #fff;
     width: 100%;
 }
-.btn-form:hover{
-    color: #fff;
+//bouton espace
+.btn-espaces{
+    width: 80%;
+    border-radius: 30px;
+    padding: 10px auto;
 }
-
 
 //bouton carte resto
 .btn-carte-resto{
     background: #fff;
     color: #484C19;
-    border-radius: 30px;
 }
 .btn-carte-resto a{
     color: #484C19;
@@ -93,6 +99,7 @@ h5{
 .btn-carte-resto:hover{
     background: #fff;
 }
+
 
 
 
@@ -328,6 +335,11 @@ footer i:hover{
 }
 
 
+.hidden-form{
+    display: none;
+}
+
+
 
 
 
@@ -392,8 +404,6 @@ footer i:hover{
 .hidden{
     display: none;
 }
-
-
 
 .image-card img{
     border-radius: 30px;
