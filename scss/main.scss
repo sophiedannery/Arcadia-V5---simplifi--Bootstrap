@@ -67,6 +67,7 @@ h5{
     font-weight: 300;
 }
 
+//bouton formulaire
 .btn-form{
     border-radius: 30px;
     color: #fff;
@@ -76,16 +77,23 @@ h5{
     color: #fff;
 }
 
+
+//bouton carte resto
 .btn-carte-resto{
     background: #fff;
     color: #484C19;
     border-radius: 30px;
 }
-
-.btn-carte-resto:hover{
-    background: #fff;
+.btn-carte-resto a{
+    color: #484C19;
+}
+.btn-carte-resto a:hover{
     color: #C6732E;
 }
+.btn-carte-resto:hover{
+    background: #fff;
+}
+
 
 
 
@@ -362,3 +370,35 @@ footer i:hover{
     margin: 0;
 }
 
+// INFOS PRATIQUES
+.info-pratique-box{
+    border: 1px solid #C6732E;
+}
+
+.info-pratique-box i {
+    font-size: 32px
+}
+
+
+
+
+
+
+
+
+
+// PAGE HABITATS
+
+.hidden{
+    display: none;
+}
+
+
+
+.image-card img{
+    border-radius: 30px;
+    cursor: pointer;
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}

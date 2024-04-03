@@ -12044,9 +12044,16 @@ h5, .h5 {
   border-radius: 30px;
 }
 
+.btn-carte-resto a {
+  color: #484C19;
+}
+
+.btn-carte-resto a:hover {
+  color: #C6732E;
+}
+
 .btn-carte-resto:hover {
   background: #fff;
-  color: #C6732E;
 }
 
 .navbar img {
@@ -12281,4 +12288,25 @@ footer i:hover {
 
 .col-info-resto p {
   margin: 0;
+}
+
+.info-pratique-box {
+  border: 1px solid #C6732E;
+}
+
+.info-pratique-box i {
+  font-size: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+.image-card img {
+  border-radius: 30px;
+  cursor: pointer;
+  height: 200px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
