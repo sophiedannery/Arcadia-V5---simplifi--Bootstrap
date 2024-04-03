@@ -12267,6 +12267,10 @@ footer i:hover {
   border: 1px solid #484C19;
 }
 
+.container-img-signin img {
+  width: 400px;
+}
+
 .hidden-form {
   display: none;
 }
