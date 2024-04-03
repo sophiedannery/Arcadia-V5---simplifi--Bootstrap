@@ -416,3 +416,136 @@ footer i:hover{
     width: auto;
     object-fit: cover;
 }
+
+
+
+
+
+
+
+
+
+// CAROUSEL A
+.container-carousel{
+    width: 90%;
+    height: 350px;
+    margin: 20px auto;
+}
+
+.carousel{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    // border: 2px solid #484C19;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    height: 100%;
+    width: 500%;
+    flex-shrink: 0;
+    transition: all 0.5s;
+}
+
+.slider section{
+    flex-basis: 20%;
+    width: 20%;
+    flex-shrink: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.arrow.prev{
+    left: 10px;
+}
+
+.arrow.next{
+    right: 10px;
+}
+
+.arrow i{
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.arrow i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+// CAROUSEL B
+.container-carouselB{
+    width: 90%;
+    height: 350px;
+    margin: 20px auto;
+}
+
+.carouselB{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    // border: 2px solid #484C19;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderB{
+    display: flex;
+    height: 100%;
+    width: 500%;
+    flex-shrink: 0;
+    transition: all 0.5s;
+}
+
+.sliderB section{
+    flex-basis: 20%;
+    width: 20%;
+    flex-shrink: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowB{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.arrowB.prevB{
+    left: 10px;
+}
+
+.arrowB.nextB{
+    right: 10px;
+}
+
+.arrowB i{
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.arrowB i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
