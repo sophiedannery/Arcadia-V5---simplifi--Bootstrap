@@ -28,12 +28,15 @@
         <div class="form-group mb-3">
           <label for="EmailInput" class="form-label">E-mail</label>
           <input type="email" class="form-control" id="EmailInput" placeholder="">
+          <div class="invalid-feedback">
+            Le mail et le mot de passe ne correspondent pas
+          </div>
         </div>
         <div class="form-group mb-4">
           <label for="PasswordInput" class="form-label">Mot de passe</label>
           <input type="password" class="form-control" id="PasswordInput" placeholder="">
         </div>
-        <button type="submit" class="btn btn-success btn-form" id="btn-validation-connexion">Connexion</button>
+        <button type="button" class="btn btn-success btn-form" id="btn-validation-connexion">Connexion</button>
       </form>
 </div>
 
