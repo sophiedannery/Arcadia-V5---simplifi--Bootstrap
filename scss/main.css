@@ -12319,6 +12319,16 @@ footer i:hover {
   font-size: 32px;
 }
 
+.btn-admin i {
+  margin-right: 10px;
+}
+
+.btn-delete-modif {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .hidden {
   display: none;
 }

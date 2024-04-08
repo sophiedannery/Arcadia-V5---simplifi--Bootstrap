@@ -179,6 +179,13 @@
     </article>
 </section>
 
+<!-- bouton ajout restaurant -->
+<div class="container btn-admin" data-show="admin" data-show="employe">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-plus-circle"></i>Ajouter un restaurant</button>
+    </div>
+</div>
+
 <section class="resto" id="savana-grill">
     <article>
         <div class="container container-resto">
@@ -200,6 +207,16 @@
                         <p class="text-white">Dégustez des plats savoureux au restaurant Savane Grill du zoo Arcadia. Avec son ambiance chaleureuse et son menu varié, vous pourrez savourer des spécialités locales tout en profitant de la vue sur la savane. Un lieu idéal pour se restaurer et se détendre lors de votre visite au zoo.</p>
                         <button class="btn btn-carte-resto mt-3"><a href="/carteRestaurantA">VOIR LA CARTE</a></button>
                     </div>
+
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin" data-show="employe">
+                        <div class="text-center">
+                            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteRestauModal"><i class="bi bi-trash"></i>Supprimer</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -227,6 +244,16 @@
                         <p class="text-white">Dégustez des saveurs authentiques à la Pizzeria De La Jungle du zoo Arcadia. Plongez dans une expérience culinaire unique au cœur de la jungle, où vous pourrez déguster des pizzas fraîches et savoureuses dans une atmosphère exotique. Un endroit idéal pour recharger vos batteries avant de poursuivre votre aventure au zoo.</p>
                         <button class="btn btn-carte-resto mt-3"><a href="/carteRestaurantB">VOIR LA CARTE</a></button>
                     </div>
+
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin" data-show="employe">
+                        <div class="text-center">
+                            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteRestauModal"><i class="bi bi-trash"></i>Supprimer</button>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -254,6 +281,16 @@
                         <p class="text-white">Faites une pause détente au Café Oasis du zoo Arcadia. Niché dans un cadre paisible, ce café vous propose une sélection de boissons chaudes et fraîches ainsi que des snacks légers. Profitez d'un moment de tranquillité et de rafraîchissement avant de reprendre votre exploration du zoo.</p>
                         <button class="btn btn-carte-resto mt-3"><a href="/carteRestaurantC">VOIR LA CARTE</a></button>
                     </div>
+
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin" data-show="employe">
+                        <div class="text-center">
+                            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteRestauModal"><i class="bi bi-trash"></i>Supprimer</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -273,3 +310,64 @@
         </div>
     </article>
 </section>
+
+
+
+
+
+  <!-- Modal Edition -->
+  <div class="modal fade" id="EditionRestauModal" tabindex="-1" aria-labelledby="EditionRestauModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditionRestauModalLabel">Edition Restaurant</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="form-content">
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Nom du restaurant</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="HoraireRestauInput" class="form-label">Horaires du restaurant</label>
+                    <input type="text" class="form-control" id="HoraireRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="InfosRestauInput" class="form-label">Description du restaurant</label>
+                    <textarea type="text" class="form-control" id="InfosRestauInput" rows="3"></textarea>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="ImageRestauInput" class="form-label">Photo du restaurant</label>
+                  <input type="file" class="form-control" id="ImageRestauInput" >
+                </div>
+                <button type="button" class="btn btn-success btn-form" id="btn-validation-connexion">Enregistrer</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Suppression -->
+    <div class="modal fade" id="DeleteRestauModal" tabindex="-1" aria-labelledby="DeleteRestauModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="DeleteRestauModalLabel">Êtes-vous sûr de vouloir supprimer ce restaurant ?</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-content">
+                    <div class="form-group mb-3">
+                        <p>Nom du restaurant</p>
+                      <div class="image-resto col-12 col-lg-6 p-4">
+                        <img src="/Media/restoA.jpg" class="w-100">
+                    </div>
+                    </div>
+                    <button type="button" class="btn btn-success btn-form m-1" id="btn-validation-connexion">Supprimer</button>
+                    <button type="button" class="btn btn-secondary btn-form m-1" id="btn-validation-connexion" data-bs-dismiss="modal">Annuler</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
