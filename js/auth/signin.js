@@ -26,9 +26,9 @@ function showSignInForm() {
 
       //Placer ce token en cookie
 
-      setCookie(roleCookieName, "admin", 7);
+      setCookie(roleCookieName, "employe", 7);
 
-      window.location.replace("/");
+      window.location.replace("/espace-admin");
     } else {
       inputMail.classList.add("is-invalid");
       inputPassword.classList.add("is-invalid");

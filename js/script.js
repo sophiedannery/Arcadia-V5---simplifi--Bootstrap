@@ -12,7 +12,7 @@ function getRole(){
 function signout(){
     eraseCookie(tokenCookieName);
     eraseCookie(roleCookieName);
-    window.location.reload();
+    window.location.replace("/signin");
 }
 
 function setToken(token){
