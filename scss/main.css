@@ -12458,4 +12458,24 @@ footer i:hover {
 .arrowB i:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+
+.col-espace {
+  height: 200px;
+  margin: 20px;
+  position: relative;
+}
+.col-espace .espace-icone-A {
+  font-size: 20px;
+}
+
+.icone-espace {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+.icone-espace:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */

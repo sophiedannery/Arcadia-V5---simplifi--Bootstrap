@@ -565,3 +565,28 @@ footer i:hover{
 }
 
 
+
+
+
+//ESPACE ADMIN EMPLOYE VETERINAIRE
+
+.col-espace{
+    height: 200px;
+    margin: 20px;
+    position: relative;
+
+    .espace-icone-A{
+        font-size: 20px;
+    }
+}
+
+.icone-espace{
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+    font-size: 22px;
+}
+
+.icone-espace:hover{
+    transform: scale(1.1);
+}
