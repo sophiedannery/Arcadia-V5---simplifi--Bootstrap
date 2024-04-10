@@ -19,8 +19,14 @@
 </section>
 
 
-<!-- bouton ajout visite -->
-<div class="container btn-admin" data-show="admin employe">
+<!-- bouton ajout visite ADMIN-->
+<div class="container btn-admin" data-show="admin">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-plus-circle"></i>Ajouter une visite</button>
+    </div>
+</div>
+<!-- bouton ajout visite EMPLOYE-->
+<div class="container btn-admin" data-show="employe">
     <div class="text-center">
         <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-plus-circle"></i>Ajouter une visite</button>
     </div>
@@ -82,8 +88,17 @@
             </div>
         </div>
 
-        <!-- bouton modifier ou supprimer -->
-        <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe" id="container-btn-modifier">
+        <!-- bouton modifier ou supprimer ADMIN-->
+        <div class="container btn-admin btn-delete-modif mt-5" data-show="admin" id="container-btn-modifier">
+            <div class="text-center mb-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteVisiteModal"><i class="bi bi-trash"></i>Supprimer</button>
+            </div>
+        </div>
+        <!-- bouton modifier ou supprimer EMPLOYE-->
+        <div class="container btn-admin btn-delete-modif mt-5" data-show="employe" id="container-btn-modifier">
             <div class="text-center mb-2">
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-pencil-square"></i>Modifier</button>
             </div>
@@ -152,8 +167,17 @@
             </div>
         </div>
 
-        <!-- bouton modifier ou supprimer -->
-        <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe" id="container-btn-modifier">
+        <!-- bouton modifier ou supprimer ADMIN-->
+        <div class="container btn-admin btn-delete-modif mt-5" data-show="admin" id="container-btn-modifier">
+            <div class="text-center mb-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteVisiteModal"><i class="bi bi-trash"></i>Supprimer</button>
+            </div>
+        </div>
+        <!-- bouton modifier ou supprimer EMPLOYE-->
+        <div class="container btn-admin btn-delete-modif mt-5" data-show="employe" id="container-btn-modifier">
             <div class="text-center mb-2">
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-pencil-square"></i>Modifier</button>
             </div>
@@ -209,8 +233,14 @@
 
 <!-- RESTAURANT -->
 
-<!-- bouton ajout restaurant -->
-<div class="container btn-admin" data-show="admin employe">
+<!-- bouton ajout restaurant ADMIN-->
+<div class="container btn-admin" data-show="admin">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-plus-circle"></i>Ajouter un restaurant</button>
+    </div>
+</div>
+<!-- bouton ajout restaurant EMPLOYE-->
+<div class="container btn-admin" data-show="employe">
     <div class="text-center">
         <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-plus-circle"></i>Ajouter un restaurant</button>
     </div>
@@ -238,8 +268,17 @@
                         <button class="btn btn-carte-resto mt-3"><a href="/carteRestaurantA">VOIR LA CARTE</a></button>
                     </div>
 
-                    <!-- bouton modifier ou supprimer -->
-                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe">
+                    <!-- bouton modifier ou supprimer ADMIN-->
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin">
+                        <div class="text-center">
+                            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteRestauModal"><i class="bi bi-trash"></i>Supprimer</button>
+                        </div>
+                    </div>
+                    <!-- bouton modifier ou supprimer EMPLOYE-->
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="employe">
                         <div class="text-center">
                             <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
                         </div>
@@ -276,8 +315,17 @@
                         <button class="btn btn-carte-resto mt-3"><a href="/carteRestaurantB">VOIR LA CARTE</a></button>
                     </div>
 
-                    <!-- bouton modifier ou supprimer -->
-                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe">
+                    <!-- bouton modifier ou supprimer ADMIN-->
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin">
+                        <div class="text-center">
+                            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteRestauModal"><i class="bi bi-trash"></i>Supprimer</button>
+                        </div>
+                    </div>
+                    <!-- bouton modifier ou supprimer EMPLOYE-->
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="employe">
                         <div class="text-center">
                             <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
                         </div>
@@ -315,8 +363,17 @@
                     </div>
 
 
-                    <!-- bouton modifier ou supprimer -->
-                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe">
+                    <!-- bouton modifier ou supprimer ADMIN-->
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="admin">
+                        <div class="text-center">
+                            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteRestauModal"><i class="bi bi-trash"></i>Supprimer</button>
+                        </div>
+                    </div>
+                    <!-- bouton modifier ou supprimer EMPLOYE-->
+                    <div class="container btn-admin btn-delete-modif mt-5" data-show="employe">
                         <div class="text-center">
                             <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
                         </div>
@@ -344,6 +401,26 @@
         </div>
     </article>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
