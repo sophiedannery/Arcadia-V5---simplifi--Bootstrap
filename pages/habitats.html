@@ -4,7 +4,12 @@
     </div>
 </div>
 
-
+<!-- bouton ajout visite ADMIN-->
+<div class="container btn-admin" data-show="admin">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#EditionHabitatModal"><i class="bi bi-plus-circle"></i>Ajouter un habitat</button>
+    </div>
+</div>
 
 <section class="habitats">
     <article>
@@ -53,6 +58,16 @@
         <p>Explorez la majestueuse savane au zoo Arcadia, un habitat emblématique qui évoque les vastes plaines africaines.<br>Plongez dans un climat chaud et sec, semblable aux régions subtropicales, où le soleil brille généreusement sur les étendues herbeuses.<br>Rencontrez les résidents emblématiques de la savane, des éléphants majestueux aux lions imposants, en passant par les girafes élancées et les zèbres rayés. Immergez-vous dans cet écosystème diversifié, qui s'étend à travers différentes régions d'Afrique, et découvrez la beauté et la diversité de la faune qui y réside.</p>
     </div>
 
+    <!-- bouton modifier ou supprimer DESCRIPTION ADMIN-->
+    <div class="container btn-admin btn-delete-modif" data-show="admin">
+        <div class="text-center">
+            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EdititionDescriptionHabitatModal"><i class="bi bi-pencil-square"></i>Modifier la description</button>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteDescriptionHabitatModal"><i class="bi bi-trash"></i>Supprimer</button>
+        </div>
+    </div>
+
     <div class="container container-liste-animaux">
 
         <h5 class="text-center pt-4 pb-2">Galerie</h5>
@@ -62,6 +77,21 @@
                 <img src="/Media/lasavane.jpg" alt="" class="w-100">
             </div>
         </div>
+
+        <!-- bouton modifier ou supprimer GALERIE ADMIN-->
+    <div class="container btn-admin btn-delete-modif p-4" data-show="admin">
+        <div class="text-center">
+            <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EdititionGalerieHabitatModal"><i class="bi bi-pencil-square"></i>Modifier la galerie</button>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteGalerieHabitatModal"><i class="bi bi-trash"></i>Supprimer</button>
+        </div>
+    </div>
+
+
+
+
+
         
         <h5 class="text-center pt-5 pb-2">Les animaux de la savane</h5>
 
@@ -120,6 +150,129 @@
 
 
 
+
+
+      <!-- Modal Edition Habitat -->
+      <div class="modal fade" id="EditionHabitatModal" tabindex="-1" aria-labelledby="EditionHabitatModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="EditionHabitatModalLabel">Edition Habitats</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-content">
+                    <div class="form-group mb-3">
+                        <label for="NameHabitatInput" class="form-label">Nom de l'habitat</label>
+                        <input type="text" class="form-control" id="NameHabitatInput">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="ImageHabitatInput" class="form-label">Image</label>
+                        <textarea type="file" class="form-control" id="ImageHabitatInput" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success btn-form" id="btn-validation-connexion">Enregistrer</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+           <!-- Modal Edition Description Habitat -->
+           <div class="modal fade" id="EdititionDescriptionHabitatModal" tabindex="-1" aria-labelledby="EdititionDescriptionHabitatModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title fs-5" id="EdititionDescriptionHabitatModalLabel">Edition Habitats</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-content">
+                        <div class="form-group mb-3">
+                            <label for="NameHabitatInput" class="form-label">Description de l'habitat</label>
+                            <input type="text" class="form-control" id="NameHabitatInput">
+                        </div>
+                        <button type="button" class="btn btn-success btn-form" id="btn-validation-connexion">Enregistrer</button>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+               <!-- Modal Suppression Description Habitat -->
+      <div class="modal fade" id="DeleteDescriptionHabitatModal" tabindex="-1" aria-labelledby="DeleteDescriptionHabitatModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="DeleteDescriptionHabitatModalLabel">Êtes-vous sûr de vouloir supprimer la description de l'habitat ?</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-content">
+                    <button type="button" class="btn btn-success btn-form m-1" id="btn-validation-connexion">Supprimer</button>
+                    <button type="button" class="btn btn-secondary btn-form m-1" id="btn-validation-connexion" data-bs-dismiss="modal">Annuler</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+           <!-- Modal Edition Galerie Habitat -->
+           <div class="modal fade" id="EdititionGalerieHabitatModal" tabindex="-1" aria-labelledby="EdititionGalerieHabitatModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title fs-5" id="EdititionGalerieHabitatModalLabel">Edition Habitats</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-content">
+                        <div class="form-group mb-3">
+                            <label for="imageGalerieHabitat1Input" class="form-label">Image 1</label>
+                            <input type="file" class="form-control" id="imageGalerieHabitat1Input">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="imageGalerieHabitat2Input" class="form-label">Image 2</label>
+                            <input type="file" class="form-control" id="imageGalerieHabitat2Input">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="imageGalerieHabitat3Input" class="form-label">Image 3</label>
+                            <input type="file" class="form-control" id="imageGalerieHabitat3Input">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="imageGalerieHabitat4Input" class="form-label">Image 4</label>
+                            <input type="file" class="form-control" id="imageGalerieHabitat4Input">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="imageGalerieHabitat5Input" class="form-label">Image 5</label>
+                            <input type="file" class="form-control" id="imageGalerieHabitat5Input">
+                        </div>
+                        <button type="button" class="btn btn-success btn-form" id="btn-validation-connexion">Enregistrer</button>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+               <!-- Modal Suppression Galerie Habitat -->
+      <div class="modal fade" id="DeleteGalerieHabitatModal" tabindex="-1" aria-labelledby="DeleteGalerieHabitatModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="DeleteGalerieHabitatModalLabel">Êtes-vous sûr de vouloir supprimer la galerie ?</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-content">
+                    <button type="button" class="btn btn-success btn-form m-1" id="btn-validation-connexion">Supprimer</button>
+                    <button type="button" class="btn btn-secondary btn-form m-1" id="btn-validation-connexion" data-bs-dismiss="modal">Annuler</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
