@@ -26,7 +26,7 @@ function showSignInForm() {
 
       //Placer ce token en cookie
 
-      setCookie(roleCookieName, "veterinaire", 7);
+      setCookie(roleCookieName, "admin", 7);
 
       window.location.replace("/espace-admin");
     } else {

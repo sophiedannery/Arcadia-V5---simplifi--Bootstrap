@@ -4,6 +4,10 @@
     </div>
 </div>
 
+
+
+<!-- VISITE -->
+
 <section class="visiter-autrement">
     <article>
         <div class="container p-4">
@@ -14,12 +18,18 @@
     </article>
 </section>
 
+
+<!-- bouton ajout visite -->
+<div class="container btn-admin" data-show="admin employe">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-plus-circle"></i>Ajouter une visite</button>
+    </div>
+</div>
+
 <section class="visite">
     <article>
         <div class="container container-visite">
-            
             <div class="row row-visite">
-
                 <div class="carousel-visite col-12 col-lg-6 p-4">
                     <div class="container-carousel">
                         <div class="carousel">
@@ -66,14 +76,20 @@
                                 <div class="col-g-visite"><i class="fa-solid fa-caret-right text-primary"></i><p class="small text-primary">Tarif</p></div>
                                 <div class="col-d-visite"><p class="small text-primary">Gratuit</p></div>
                             </div>
-                   
                         </div>
                     </div>
-
                 </div>
-
             </div>
+        </div>
 
+        <!-- bouton modifier ou supprimer -->
+        <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe" id="container-btn-modifier">
+            <div class="text-center mb-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteVisiteModal"><i class="bi bi-trash"></i>Supprimer</button>
+            </div>
         </div>
 
     </article>
@@ -135,6 +151,17 @@
 
             </div>
         </div>
+
+        <!-- bouton modifier ou supprimer -->
+        <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe" id="container-btn-modifier">
+            <div class="text-center mb-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionVisiteModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#DeleteVisiteModal"><i class="bi bi-trash"></i>Supprimer</button>
+            </div>
+        </div>
+
     </article>
 </section>
 
@@ -179,6 +206,9 @@
     </article>
 </section>
 
+
+<!-- RESTAURANT -->
+
 <!-- bouton ajout restaurant -->
 <div class="container btn-admin" data-show="admin employe">
     <div class="text-center">
@@ -208,6 +238,7 @@
                         <button class="btn btn-carte-resto mt-3"><a href="/carteRestaurantA">VOIR LA CARTE</a></button>
                     </div>
 
+                    <!-- bouton modifier ou supprimer -->
                     <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe">
                         <div class="text-center">
                             <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
@@ -245,6 +276,7 @@
                         <button class="btn btn-carte-resto mt-3"><a href="/carteRestaurantB">VOIR LA CARTE</a></button>
                     </div>
 
+                    <!-- bouton modifier ou supprimer -->
                     <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe">
                         <div class="text-center">
                             <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
@@ -282,6 +314,8 @@
                         <button class="btn btn-carte-resto mt-3"><a href="/carteRestaurantC">VOIR LA CARTE</a></button>
                     </div>
 
+
+                    <!-- bouton modifier ou supprimer -->
                     <div class="container btn-admin btn-delete-modif mt-5" data-show="admin employe">
                         <div class="text-center">
                             <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#EditionRestauModal"><i class="bi bi-pencil-square"></i>Modifier</button>
@@ -315,7 +349,7 @@
 
 
 
-  <!-- Modal Edition -->
+  <!-- Modal Edition Restaurant -->
   <div class="modal fade" id="EditionRestauModal" tabindex="-1" aria-labelledby="EditionRestauModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -348,7 +382,7 @@
     </div>
   </div>
 
-    <!-- Modal Suppression -->
+    <!-- Modal Suppression Restaurant-->
     <div class="modal fade" id="DeleteRestauModal" tabindex="-1" aria-labelledby="DeleteRestauModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -363,6 +397,73 @@
                       <div class="image-resto col-12 col-lg-6 p-4">
                         <img src="/Media/restoA.jpg" class="w-100">
                     </div>
+                    </div>
+                    <button type="button" class="btn btn-success btn-form m-1" id="btn-validation-connexion">Supprimer</button>
+                    <button type="button" class="btn btn-secondary btn-form m-1" id="btn-validation-connexion" data-bs-dismiss="modal">Annuler</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal Edition Visite -->
+  <div class="modal fade" id="EditionVisiteModal" tabindex="-1" aria-labelledby="EditionVisiteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditionVisiteModalLabel">Edition Visite</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="form-content">
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Titre de la visite</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="InfosRestauInput" class="form-label">Description de la visite</label>
+                    <textarea type="text" class="form-control" id="InfosRestauInput" rows="3"></textarea>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="HoraireRestauInput" class="form-label">Horaires</label>
+                    <input type="text" class="form-control" id="HoraireRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="HoraireRestauInput" class="form-label">Durée</label>
+                    <input type="text" class="form-control" id="HoraireRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="HoraireRestauInput" class="form-label">Lieu de RDV</label>
+                    <input type="text" class="form-control" id="HoraireRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="HoraireRestauInput" class="form-label">Tarifs</label>
+                    <input type="text" class="form-control" id="HoraireRestauInput">
+                </div>
+                <div class="form-group mb-4">
+                  <label for="ImageRestauInput" class="form-label">Photos de la visite</label>
+                  <input type="file" class="form-control" id="ImageRestauInput" >
+                </div>
+                <button type="button" class="btn btn-success btn-form" id="btn-validation-connexion">Enregistrer</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Suppression Visite-->
+    <div class="modal fade" id="DeleteVisiteModal" tabindex="-1" aria-labelledby="DeleteVisiteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="DeleteVisiteModalLabel">Êtes-vous sûr de vouloir supprimer cette visite ?</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-content">
+                    <div class="form-group mb-3">
+                        <p>Titre de la visite</p>
                     </div>
                     <button type="button" class="btn btn-success btn-form m-1" id="btn-validation-connexion">Supprimer</button>
                     <button type="button" class="btn btn-secondary btn-form m-1" id="btn-validation-connexion" data-bs-dismiss="modal">Annuler</button>

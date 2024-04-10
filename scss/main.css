@@ -12329,6 +12329,13 @@ footer i:hover {
   align-items: center;
 }
 
+#container-btn-modifier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .hidden {
   display: none;
 }
