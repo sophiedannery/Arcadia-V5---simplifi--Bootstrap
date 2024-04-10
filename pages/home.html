@@ -83,8 +83,15 @@
                         <div class="jour-horaire">dimanche</div>
                         <div class="heure-horaire">10h - 21h</div>
                     </div>
-
                 </div>
+
+                <!-- bouton modifier ou supprimer ADMIN-->
+                <div class="container btn-admin btn-delete-modif mt-5" data-show="admin">
+                    <div class="text-center">
+                        <button class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#EditionHorairesModal"><i class="bi bi-pencil-square"></i>Modifier</button>
+                    </div>
+                </div>
+
             </div>
             <div class="col-prep col-12 col-lg-4 bg-success p-5"  id="col-restau">
                 <div class="prep-titre mb-3">
@@ -191,3 +198,86 @@
     </div>    
 </section>
 
+
+
+
+
+
+
+
+
+
+  <!-- Modal Edition Restaurant -->
+  <div class="modal fade" id="EditionHorairesModal" tabindex="-1" aria-labelledby="EditionHorairesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditionHorairesModalLabel">Edition Horaires</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="form-content">
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Lundi - Ouverture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Lundi - Fermeture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Mardi - Ouverture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Mardi - Fermeture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Mercredi - Ouverture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Mercredi - Fermeture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Jeudi - Ouverture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Jeudi - Fermeture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Vendredi - Ouverture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Vendredi - Fermeture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Samedi - Ouverture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Samedi - Fermeture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Dimanche - Ouverture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="NameRestauInput" class="form-label">Dimanche - Fermeture</label>
+                    <input type="text" class="form-control" id="NameRestauInput">
+                </div>
+                
+                <button type="button" class="btn btn-success btn-form" id="btn-validation-connexion">Enregistrer</button>
+                <button type="button" class="btn btn-primary btn-form mt-3" id="btn-validation-connexion" data-bs-dismiss="modal">Annuler</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
