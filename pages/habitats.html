@@ -95,6 +95,13 @@
         
         <h5 class="text-center pt-5 pb-2">Les animaux de la savane</h5>
 
+                <!-- bouton ajout ANIMAL-->
+        <div class="container btn-admin" data-show="admin">
+            <div class="text-center">
+                <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#EditionAnimalModal"><i class="bi bi-plus-circle"></i>Ajouter un animal</button>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col col-12 col-lg-4 col-animaux p-4">
                 <div class="image-card">
@@ -275,6 +282,50 @@
       </div>
 
 
+      <!-- Modal Ajout Animal -->
+      <div class="modal fade" id="EditionAnimalModal" tabindex="-1" aria-labelledby="EditionAnimalModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="EditionAnimalModalLabel">Ajouter un Animal</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-content">
+                    <div class="form-group mb-3">
+                        <label for="NameAnimalInput" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="NameAnimalInput">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="RaceAnimalInput" class="form-label">Race</label>
+                        <input type="text" class="form-control" id="RaceAnimalInput">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="ImageAnimalInput" class="form-label">Image</label>
+                        <input type="file" class="form-control" id="ImageAnimalInput">
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-group">
+                            <input class="form-check-input" type="radio" name="serviceChoisi" id="savaneRadio" >
+                            <label class="form-check-label" for="savaneRadio">Savane</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="radio" name="serviceChoisi" id="jungleRadio" checked>
+                            <label class="form-check-label" for="jungleRadio">Jungle</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="radio" name="serviceChoisi" id="maraisRadio" checked>
+                            <label class="form-check-label" for="maraisRadio">Marais</label>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-success btn-form" id="btn-validation-connexion">Enregistrer</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
